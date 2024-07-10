@@ -18,6 +18,10 @@ const menuItems = [
     name: 'ChatBot',
     href: '/ChatBot',
   },
+  {
+    name: 'Monitoring',
+    href: '/Monitoring',
+  },
 ]
 
 export default function ExampleNavbarOne() {
