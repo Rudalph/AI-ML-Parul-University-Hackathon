@@ -22,6 +22,10 @@ const menuItems = [
     name: 'Monitoring',
     href: '/Monitoring',
   },
+  {
+    name: 'Advice',
+    href: '/Advice',
+  },
 ]
 
 export default function ExampleNavbarOne() {
