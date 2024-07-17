@@ -303,7 +303,7 @@ const Page = () => {
         <Button className="bg-[#10847E]" onClick={handleSubmit}>Submit</Button>
         <Drawer>
           <DrawerTrigger asChild>
-            <Button className="bg-[#10847E]">Recomendations</Button>
+            <Button className="bg-[#10847E]">Advice</Button>
           </DrawerTrigger>
           <DrawerContent>
             <div className="mx-auto w-full">
