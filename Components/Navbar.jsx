@@ -31,7 +31,7 @@ const menuItems = [
     href: '/Goals',
   },
   {
-    name: 'Medecine',
+    name: 'Medicine',
     href: '/Prescription_Analyzer',
   },
 ]
