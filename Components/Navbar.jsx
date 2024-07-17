@@ -30,6 +30,10 @@ const menuItems = [
     name: 'Goals',
     href: '/Goals',
   },
+  {
+    name: 'Medecine',
+    href: '/Prescription_Analyzer',
+  },
 ]
 
 export default function ExampleNavbarOne() {
