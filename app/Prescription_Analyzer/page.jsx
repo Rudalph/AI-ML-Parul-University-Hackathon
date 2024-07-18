@@ -42,7 +42,7 @@ const Page = () => {
     const handleSubmit = async () => {
         console.log(question)
         try {
-            const response = await fetch('http://localhost:5000/brand', {
+            const response = await fetch('http://localhost:5005/brand', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ const Page = () => {
                 <div className="flex w-full max-w-3xl items-center space-x-2 relative">
                     <Input
                         type="text"
-                        placeholder="Ask your legal doubts...."
+                        placeholder="Enter Brand Name"
                         value={question}
                         onChange={handleQuestionChange}
                         className="p-6 border border-gray-300 focus:border-gray-300"
@@ -254,7 +254,7 @@ const Page = () => {
                                 className="rounded-md bg-[#10847E] px-3 py-2 text-sm font-semibold text-white shadow-sm"
                                 onClick={() => document.getElementById('my_modal_4').showModal()}
                             >
-                                Add new employee
+                                Book Online
                             </button>
                         </div>
                     </div>

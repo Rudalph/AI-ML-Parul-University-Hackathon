@@ -73,7 +73,7 @@ const Page = () => {
         <div className="flex w-full max-w-3xl items-center space-x-2 relative">
           <Input
             type="text"
-            placeholder="Ask your legal doubts...."
+            placeholder="Ask your medical doubts...."
             value={question}
             onChange={handleQuestionChange}
             className="p-6 border border-gray-300 focus:border-gray-300"
