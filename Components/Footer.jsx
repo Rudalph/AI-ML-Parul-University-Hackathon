@@ -14,7 +14,7 @@ export default function FooterOne() {
           <span className="ml-4 text-lg font-bold text-[#10847E]">Swasthya Connect</span>
         </div>
         <div className="hidden items-center md:inline-flex">
-          <Button type="submit" className="bg-[#10847E] hover:bg-slate-400">Get Started</Button>
+          <Button type="submit" className="bg-[#10847E]">Get Started</Button>
         </div>
       </div>
       <hr className="my-8" />
@@ -29,7 +29,7 @@ export default function FooterOne() {
             ></input>
             <button
               type="button"
-              className="ml-4 rounded-full bg-[#10847E] px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              className="ml-4 rounded-full bg-[#10847E] px-3 py-3 text-sm font-semibold text-white shadow-sm"
             >
               <ChevronRight className="h-4 w-4" />
             </button>

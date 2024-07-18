@@ -32,7 +32,7 @@ export default function CardWithForm() {
            height={100}
            width={100}
           />
-          <CardDescription>Deploy.</CardDescription>
+          <CardDescription></CardDescription>
         </CardHeader>
     </Card>
     

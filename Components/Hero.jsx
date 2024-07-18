@@ -14,7 +14,7 @@ const Hero = () => {
         <div className='flex justify-center align-middle'>
         <div className="flex w-full max-w-2xl items-center space-x-2">
         <Input type="email" placeholder="Search here..." className="shadow-md h-12"/>
-        <Button type="submit" className="bg-[#10847E] hover:bg-slate-400">Search</Button>
+        <Button type="submit" className="bg-[#10847E]">Search</Button>
         </div>
       </div>
     </div>

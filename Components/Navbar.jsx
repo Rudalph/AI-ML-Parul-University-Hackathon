@@ -72,7 +72,7 @@ export default function ExampleNavbarOne() {
         <div className="hidden lg:block">
           <button
             type="button"
-            className="rounded-md bg-[#10847E] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            className="rounded-md bg-[#10847E] px-3 py-2 text-sm font-semibold text-white shadow-sm"
           >
             <FaHouseChimneyUser size={20}/> 
           </button>

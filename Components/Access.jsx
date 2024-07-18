@@ -25,7 +25,7 @@ export default function CtaOne() {
                 type="email"
                 placeholder="Email"
               />
-              <Button type="submit" className="bg-[#10847E] hover:bg-slate-400">Subscribe</Button>
+              <Button type="submit" className="bg-[#10847E]">Subscribe</Button>
             </div>
           </div>
         </form>
