@@ -42,7 +42,7 @@ const Page = () => {
     const handleSubmit = async () => {
         console.log(question)
         try {
-            const response = await fetch('http://localhost:5005/brand', {
+            const response = await fetch('http://localhost:5006/brand', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
