@@ -4,6 +4,8 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'rec
 import { collection, getDocs } from "firebase/firestore";
 import db from '@/Components/firebase';
 
+
+
 const Page = () => {
     const [chartData, setChartData] = useState([]);
 
@@ -50,26 +52,25 @@ const Page = () => {
     }, []);
 
     return (
-        <div className=' mt-40 ml-72 flex justify-between align-middle'>
+        <div className=' mt-40 ml-64 flex justify-between align-middle'>
             <div className='flex justify-center align-middle items-center'>
                 <BarChart
-                    width={900}
-                    height={400}
+                    width={1000}
+                    height={500}
                     data={chartData}
                     // margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
                     className='flex justify-center align-middle items-center'
                 >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="timestamp" />
+                    <CartesianGrid strokeDasharray="none" vertical="false"/>
+                    <XAxis dataKey="timestamp"/> 
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="height" fill="#8884d8" barSize={30} />
-                    <Bar dataKey="weight" fill="#82ca9d" barSize={30} />
-                    <Bar dataKey="heartRate" fill="#ffc658" barSize={30} />
-                    <Bar dataKey="targetWeight" fill="#283c63" barSize={30} />
-                    <Bar dataKey="dailyWaterIntake" fill="#1b4332" barSize={30} />
-                    <Bar dataKey="targetWeight" fill="#ffdc6b" barSize={30} />
+                    <Bar dataKey="height" fill="#8884d8" barSize={30} radius={[5, 5, 5, 5]} />
+                    <Bar dataKey="weight" fill="#82ca9d" barSize={30} radius={[5, 5, 5, 5]}/>
+                    <Bar dataKey="heartRate" fill="#ffc658" barSize={30} radius={[5, 5, 5, 5]}/>
+                    <Bar dataKey="targetWeight" fill="#283c63" barSize={30} radius={[5, 5, 5, 5]}/>
+                    <Bar dataKey="dailyWaterIntake" fill="#1b4332" barSize={30} radius={[5, 5, 5, 5]}/>
                 </BarChart>
             </div>
             
