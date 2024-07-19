@@ -54,16 +54,19 @@ const Page = () => {
             <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
               <li><a>Sidebar Item 1</a></li>
               <li><a>Sidebar Item 2</a></li>
-              <li><a><strong className='p-3'>1.  Indian Penal Code</strong></a></li>
-              <li><a><strong className='p-3'>2.  Code of Civil Procedure</strong></a></li>
-              <li><a><strong className='p-3'>3.  Code of Criminal Procedure</strong></a></li>
-              <li><a><strong className='p-3'>4.  Constitution of India</strong></a></li>
-              <li><a><strong className='p-3'>5.  Consumer Protection Act 2019</strong></a></li>
-              <li><a><strong className='p-3'>6.  Indian Medical Council Regultions 2002</strong></a></li>
-              <li><a><strong className='p-3'>7.  Medical Termination of Pregnancy Act, 1971</strong></a></li>
-              <li><a><strong className='p-3'>8.  The Clinical Establishments Act, 2010</strong></a></li>
-              <li><a><strong className='p-3'>9.  The Drugs and Cosmetics Act, 1940</strong></a></li>
-              <li><a><strong className='p-3'>10. The Mental Healthcare Act, 2017</strong></a></li>
+              <li><a><strong className='p-3'>1. The Gale Encyclopedia of Medicine</strong></a></li>
+              <li><a><strong className='p-3'>2. Research Papers</strong></a></li>
+              <li><a><strong className='p-3'>3. Medical Books</strong></a></li>
+              <li><a><strong className='p-3'>4. Consumer Protection Act 2019</strong></a></li>
+              <li><a><strong className='p-3'>5. Medical Termination of Pregnancy Act, 1971</strong></a></li>
+              <li><a><strong className='p-3'>6. The Clinical Establishments Act, 2010</strong></a></li>
+              <li><a><strong className='p-3'>7. The Drugs and Cosmetics Act, 1940</strong></a></li>
+              <li><a><strong className='p-3'>8. The Mental Healthcare Act, 2017</strong></a></li>
+              <li><a><strong className='p-3'>9. Indian Penal Code</strong></a></li>
+              <li><a><strong className='p-3'>10. Code of Civil Procedure</strong></a></li>
+              <li><a><strong className='p-3'>11. Code of Criminal Procedure</strong></a></li>
+              <li><a><strong className='p-3'>12. Constitution of India</strong></a></li>
+
             </ul>
           </div>
         </div>
@@ -100,14 +103,48 @@ const Page = () => {
             <ul className="menu p-4 w-auto min-h-full bg-base-200 text-base-content">
               <li><a>Sidebar Item 1</a></li>
               <li><a>Sidebar Item 2</a></li>
-              <li><a><div className="card w-96 bg-base-100 shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title">Card title!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+              <li>
+                <div className="card w-96 bg-base-100 shadow-xl m-2">
+                  <div className="card-body">
+                    <h2 className="card-title">Nutrition</h2>
+                  </div>
                 </div>
-              </div></a>
               </li>
-
+              <li>
+                <div className="card w-96 bg-base-100 shadow-xl m-2">
+                  <div className="card-body">
+                    <h2 className="card-title">Fitness</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="card w-96 bg-base-100 shadow-xl m-2">
+                  <div className="card-body">
+                    <h2 className="card-title">Stress Management</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="card w-96 bg-base-100 shadow-xl m-2">
+                  <div className="card-body">
+                    <h2 className="card-title">Sleep Optimization</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="card w-96 bg-base-100 shadow-xl m-2">
+                  <div className="card-body">
+                    <h2 className="card-title">Legal</h2>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="card w-96 bg-base-100 shadow-xl m-2">
+                  <div className="card-body">
+                    <h2 className="card-title">Medical Misinformation</h2>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -128,7 +165,7 @@ const Page = () => {
                 <div className="chat chat-start">
                   <div className="chat-image avatar">
                     <div className=" w-32rounded-full text-[#10847E]">
-                      <RiRobot2Line size={50}/>
+                      <RiRobot2Line size={50} />
                     </div>
                   </div>
                   <div className="chat-bubble bg-[#DEF8ED] text-black">{chat.question}</div>
@@ -137,7 +174,7 @@ const Page = () => {
                 <div className="chat chat-end p-5">
                   <div className="chat-image avatar">
                     <div className=" w-32rounded-full text-[#10847E]">
-                    <FaRegUser size={50}/>
+                      <FaRegUser size={50} />
                     </div>
                   </div>
                   <div className="chat-bubble bg-[#DEF8ED] text-black">{chat.answer}</div>
