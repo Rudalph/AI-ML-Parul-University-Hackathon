@@ -8,10 +8,11 @@ import Features from "@/Components/Features";
 import Access from "@/Components/Access"
 import Faqs from "@/Components/Faqs";
 import Footer from "@/Components/Footer"
+import Contactus from "@/Components/Contactus"
 
 const componentVariants = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 3 } },
 };
 
 
@@ -54,6 +55,10 @@ export default function Home() {
 
       <MotionComponent>
         <Faqs />
+      </MotionComponent>
+
+      <MotionComponent>
+        <Contactus />
       </MotionComponent>
 
       <MotionComponent>
