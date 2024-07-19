@@ -153,7 +153,7 @@ const Page = () => {
 
       <div className='mt-10'>
         
-        <div className='mt-10 flex justify-center overflow-hidden'>
+        <div className=' mt-24 flex justify-center overflow-hidden'>
           <div className='mt-10 w-4/5 items-center align-middle overflow-y-auto style={{ maxWidth: 100%, maxHeight: 100vh }}'>
             {chatHistory.map((chat, index) => (
               <div key={index}>
