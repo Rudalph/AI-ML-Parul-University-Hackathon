@@ -71,8 +71,9 @@ const Page = () => {
           </div>
         </div>
       </div>
-
+      
       <div className='w-full fixed bottom-0 flex justify-center align-middle items-center mb-10'>
+      
         <div className="flex w-full max-w-3xl items-center space-x-2 relative">
           <Input
             type="text"
@@ -151,13 +152,7 @@ const Page = () => {
       </div>
 
       <div className='mt-10'>
-        {/* Chat bubbles */}
-        <div className="chat chat-start">
-          <div className="chat-header">
-            Your Question
-          </div>
-
-        </div>
+        
         <div className='mt-10 flex justify-center overflow-hidden'>
           <div className='mt-10 w-4/5 items-center align-middle overflow-y-auto style={{ maxWidth: 100%, maxHeight: 100vh }}'>
             {chatHistory.map((chat, index) => (
