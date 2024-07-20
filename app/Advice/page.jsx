@@ -184,6 +184,7 @@ const Page = () => {
     console.log("Stress:", stress);
   }, [mood, stress]);
 
+
   return (
     <div>
       <div className='fixed bottom-0 left-0 z-50'>
