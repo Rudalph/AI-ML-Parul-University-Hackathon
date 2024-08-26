@@ -49,16 +49,19 @@ const Page = () => {
                 },
                 body: JSON.stringify({ question }),
             });
-            console.log(question)
+
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
 
-            const data = await response.json();
-            console.log(data);
-            setData(data);
-            setAnswer(data.answer);
-            setChatHistory([...chatHistory, { question, answer: data.answer }]);
+            const result = await response.json();
+            console.log(result);
+
+            // Assuming 'result' is the array you provided in the question
+            setData(result);
+
+            setAnswer(result.answer); // Adjust this if necessary
+            setChatHistory([...chatHistory, { question, answer: result.answer }]);
             setQuestion(""); // Clear input after submission
         } catch (error) {
             console.error('Error:', error);
@@ -105,7 +108,7 @@ const Page = () => {
                 </div>
             </div>
 
-            <div className='w-full fixed bottom-0 flex justify-center align-middle items-center mb-10'>
+            <div className='w-full fixed bottom-0 flex justify-center align-middle items-center mb-5'>
                 <div className="flex w-full max-w-3xl items-center space-x-2 relative">
                     <Input
                         type="text"
@@ -258,7 +261,7 @@ const Page = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="mt-6 flex flex-col">
+                    <div className="mt-6 flex flex-col px-5 lg:px-0">
                         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                             <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                                 <div className="overflow-hidden border border-[#10847E] md:rounded-lg">
@@ -267,58 +270,68 @@ const Page = () => {
                                             <tr>
                                                 <th
                                                     scope="col"
-                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700"
+                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700 w-1/6"
                                                 >
-                                                    <span>Brand Name</span>
+                                                    Brand Name
                                                 </th>
                                                 <th
                                                     scope="col"
-                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700"
+                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700 w-1/6"
                                                 >
                                                     Generic Name
                                                 </th>
                                                 <th
                                                     scope="col"
-                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700"
+                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700 w-1/6"
                                                 >
                                                     Package
                                                 </th>
                                                 <th
                                                     scope="col"
-                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700"
+                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700 w-1/6"
                                                 >
                                                     Price
                                                 </th>
                                                 <th
                                                     scope="col"
-                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700"
+                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700 w-1/6"
                                                 >
                                                     Strength
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    className="px-4 py-3.5 text-left text-sm font-bold text-gray-700 w-1/6"
+                                                >
+                                                    Company
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody className="divide-y divide-[#10847E] bg-white">
                                             {data.map((item, index) => (
                                                 <tr key={index}>
-                                                    <td className="whitespace-nowrap px-4 py-4">
-                                                        <div className="text-sm font-medium text-gray-900">{item.BrandName}</div>
+                                                    <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-900 w-1/6">
+                                                        {item.brandName}
                                                     </td>
-                                                    <td className="whitespace-nowrap px-4 py-4">
-                                                        <div className="text-sm text-gray-900">{item.GenericName}</div>
+                                                    <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-900 w-1/6">
+                                                        {item.genericName}
                                                     </td>
-                                                    <td className="whitespace-nowrap px-4 py-4">
-                                                        <div className="text-sm text-gray-900">{item.Package}</div>
+                                                    <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-900 w-1/6">
+                                                        {item.packageName || 'N/A'}
                                                     </td>
-                                                    <td className="whitespace-nowrap px-4 py-4">
-                                                        <div className="text-sm text-gray-900">{item.Price}</div>
+                                                    <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-900 w-1/6">
+                                                        {item.price}
                                                     </td>
-                                                    <td className="whitespace-nowrap px-4 py-4">
-                                                        <div className="text-sm text-gray-900">{item.Strength}</div>
+                                                    <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-900 w-1/6">
+                                                        {item.strength}
+                                                    </td>
+                                                    <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-900 w-1/6">
+                                                        {item.companyName}
                                                     </td>
                                                 </tr>
                                             ))}
                                         </tbody>
                                     </table>
+
                                 </div>
                             </div>
                         </div>
